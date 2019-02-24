@@ -17,7 +17,7 @@ public class Klass {
   }
 
   public void assignLeader(Student student) {
-    if (student.getKlass().equals(this)) {
+    if (student.getKlass().getNumber() == this.number) {
       this.leader = student;
     } else {
       System.out.println("It is not one of us.");
