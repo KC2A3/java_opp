@@ -40,4 +40,16 @@ public class Teacher extends Person {
             + ".";
     System.out.println(outPut);
   }
+
+  public void knowLeader(Student student) {
+    String outPut =
+        "I am "
+            + this.getName()
+            + ". I know "
+            + student.getName()
+            + " become Leader of Class "
+            + student.getKlass().getNumber()
+            + ".";
+    System.out.println(outPut);
+  }
 }
