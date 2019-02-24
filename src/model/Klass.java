@@ -3,6 +3,7 @@ package model;
 public class Klass {
   private int number;
   private Student leader;
+  private Teacher teacher;
 
   public Klass(int number) {
     this.number = number;
@@ -14,6 +15,10 @@ public class Klass {
 
   public Student getLeader() {
     return this.leader;
+  }
+
+  public void setTeacher(Teacher teacher) {
+    this.teacher = teacher;
   }
 
   public void assignLeader(Student student) {

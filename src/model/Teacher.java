@@ -28,4 +28,16 @@ public class Teacher extends Person {
     }
     return super.introduce() + "I am a Teacher. I teach Class" + str;
   }
+
+  public void knowStudent(Student student) {
+    String outPut =
+        "I am "
+            + this.getName()
+            + ". I know "
+            + student.getName()
+            + " has joined Class "
+            + student.getKlass().getNumber()
+            + ".";
+    System.out.println(outPut);
+  }
 }
