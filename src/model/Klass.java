@@ -17,11 +17,15 @@ public class Klass {
   }
 
   public void assignLeader(Student student) {
-    if (student.getKlass().getNumber() == this.number) {
+    if (inClass(student)) {
       this.leader = student;
     } else {
       System.out.println("It is not one of us.");
     }
+  }
+
+  public boolean inClass(Student student) {
+    return student.getKlass().getNumber() == this.number;
   }
 
   public void appendMember(Student student) {
