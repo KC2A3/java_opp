@@ -18,6 +18,10 @@ public class Student extends Person {
 
   @Override
   public String introduce() {
-    return super.introduce() + " I am at Class " + this.klass + ".";
+    if (this.klass.getLeader().getId() == super.getId()) {
+      return super.introduce() + " I am a Student. I am at Class " + this.klass + ".";
+    } else {
+      return super.introduce() + " I am a Student. I am Leader of Class " + this.klass + "2.";
+    }
   }
 }
