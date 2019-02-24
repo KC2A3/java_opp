@@ -2,7 +2,7 @@ import model.Klass;
 import model.Student;
 import model.Teacher;
 
-public class main {
+public class Main {
   public static void main(String[] args) {
     Klass klassOne = new Klass(1);
     Klass klassTwo = new Klass(2);
